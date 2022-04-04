@@ -1,0 +1,36 @@
+<div class="family">
+
+  <div class="home">
+
+    <h1 class="title" style="color:rgb(70, 80, 75); font-weight:bold">Update Blog</h1>
+
+    <form class="editPostForm">
+
+      <div class="post-title-section">
+        <label for="postTitle" class="update">update title:</label>
+        <br>
+        <input type="text" name="postTitle" id="postTitle" value="{{blog.title}}" />
+      </div>
+
+      <br>
+
+      <div class="postContent">
+        <label for="postContent" class="update">update content:</label>
+        <br>
+        <textarea class="entry-field" id="postContent" name="postContent">{{blog.content}}</textarea>
+      </div>
+
+      <br>
+
+      <button class="upDelBtn" type="submit">Update post</button>
+      <br>
+      <button type="button" class="delete-post-btn upDelBtn">Delete post</button>
+
+    </form>
+
+  </div>
+  
+</div>
+
+<script src="/js/update.js"></script>
+<script src="/js/delete.js"></script>

@@ -1,0 +1,30 @@
+<div class="family">
+
+    <div class="post">
+
+        <h2>{{blog.title}}</h2>
+        <h3>{{format_date blog.createdAt}} | Written by {{blog.user.name}}</h3>
+        <p class="content">{{blog.content}}</p>
+
+        <hr>
+
+        <form class="comment-form">
+            <label for="comments">Leave a comment:</label>
+            <br>
+            <textarea id="comment" name="comment" placeholder="Enter comment here."></textarea>
+            <button class="commentBtn" type="submit">Save Comment</button>
+        </form>
+        
+    </div>
+
+    {{#each blog.comments as |comment|}}
+    <div class="post">
+        <h3>Comment by {{comment.user.name}}</h3>
+        <p>{{format_date comment.createdAt}}</p>
+        <p>{{comment.text}}</p>
+    </div>
+    {{/each}}
+
+</div>
+
+<script src="/js/newComment.js"></script>

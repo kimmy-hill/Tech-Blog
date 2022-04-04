@@ -1,0 +1,28 @@
+<div class="family">
+
+  <div class="home">
+    <h1 class="title" style="color:rgb(70, 80, 75); font-weight:bold"> Current Blogs </h1>
+  </div>
+
+  {{#if loggedIn}}
+  {{#each blogs}}
+  <a href="/api/blogs/{{id}}" class="blogLink">
+    <div class="post">
+      <p>{{format_date createdAt}}</p>
+      <h2>{{title}}</h2>
+      <p class="content">{{content}}</p>
+    </div>
+  </a>
+  {{/each}}
+  {{/if}}
+
+  {{#unless loggedIn}}
+  {{#each blogs}}
+  <div class="post">
+    <h2>{{title}}</h2>
+    <p class="content">{{content}}</p>
+  </div>
+  {{/each}}
+  {{/unless}}
+
+</div>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Blog</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header class="navbar">
+    <nav>
+      <!-- Conditionally render login or logout links -->
+      <div class="links">
+        <a href="/" class="navLink">Home | </a>
+        <a href="/dash" class="navLink">Dashboard | </a>
+        {{#if loggedIn}}
+        <a href="/" id="logout" class="navLink">Logout</a>
+        {{else}}
+        <a href="/login" class="navLink">Login</a>
+        {{/if}}
+      </div>
+
+      <h1 class="title">
+        <a href="/" class="navLink">The Tech Blog</a>
+      </h1>
+
+    </nav>
+  </header>
+  <main>
+
+
+    <!-- Render the sub layout -->
+    {{{ body }}}
+
+
+  </main>
+
+  <footer>
+  </footer>
+
+</body>
+
+</html>
+
+<script src="/js/logout.js"></script>

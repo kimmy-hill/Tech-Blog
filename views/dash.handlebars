@@ -1,0 +1,23 @@
+<div class="home">
+  <h1 class="title" style="color:rgb(70, 80, 75); font-weight:bold">Dashboard</h1>
+</div>
+
+<div class="family">
+
+  {{#if loggedIn}}
+  {{#each blogs}}
+  <a href="/dash/{{id}}" class="blogLink">
+    <div class="post">
+      <p>{{format_date createdAt}}</p>
+      <h2>{{title}}</h2>
+      <p class="content">{{content}}</p>
+    </div>
+  </a>
+  {{/each}}
+  {{/if}}
+
+  <div class="post">
+    <a href="/dash/newblog"><button class="upDelBtn">Create New Blog</button></a>
+  </div>
+
+</div>
