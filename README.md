@@ -40,5 +40,16 @@ THEN I am signed out of the site
 WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
 
-Heroku:
+Heroku: https://enigmatic-chamber-67717.herokuapp.com
+
+Local Deployment:
+<img width="1512" alt="Screen Shot 2022-04-03 at 11 51 05 PM" src="https://user-images.githubusercontent.com/95260935/161471879-09f4ac01-8ada-4c28-b072-7a30c313e55e.png">
+
+<img width="1512" alt="Screen Shot 2022-04-03 at 11 51 28 PM" src="https://user-images.githubusercontent.com/95260935/161471886-46f796e2-b1e2-425c-ad8b-5bdeee371511.png">
+
+<img width="1512" alt="Screen Shot 2022-04-03 at 11 51 50 PM" src="https://user-images.githubusercontent.com/95260935/161471896-0e4af9d1-9618-4c20-baf7-d8836f545b14.png">
+
+<img width="1536" alt="Screen Shot 2022-04-03 at 11 51 46 PM" src="https://user-images.githubusercontent.com/95260935/161471899-f1f98096-955b-4e16-bb33-1ee5c75c0484.png">
+
+
 
